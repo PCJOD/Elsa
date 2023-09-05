@@ -123,7 +123,7 @@ async def pm_text(bot, message):
     await message.reply_text("<b>Your message has been sent to my moderators !</b>",
                              reply_markup=InlineKeyboardMarkup(
                                  [[
-                                     InlineKeyboardButton('📍 Mᴏᴠɪᴇ ɪs ʜᴇʀᴇ 📍', url='https://t.me/moviecafe_01')
+                                     InlineKeyboardButton('📍 Mᴏᴠɪᴇ ɪs ʜᴇʀᴇ 📍', url='https://t.me/newmalayalammovies2024')
                                  ]]
                              )
                              )
@@ -775,7 +775,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data.startswith("checksub"):
         if (AUTH_CHANNEL or REQ_CHANNEL) and not await is_subscribed(client, query):
             await query.answer(
-                "𝑰 𝑳𝒊𝒌𝒆 𝒀𝒐𝒖𝒓 𝑺𝒎𝒂𝒓𝒕𝒏𝒆𝒔𝒔, 𝑩𝒖𝒕 𝑫𝒐𝒏'𝒕 𝑩𝒆 𝑶𝒗𝒆𝒓𝒔𝒎𝒂𝒓𝒕 😒\n@𝒄𝒊𝒏𝒆𝒎𝒂𝒍𝒂.𝒄𝒐𝒎", show_alert=True)
+                "𝑰 𝑳𝒊𝒌𝒆 𝒀𝒐𝒖𝒓 𝑺𝒎𝒂𝒓𝒕𝒏𝒆𝒔𝒔, 𝑩𝒖𝒕 𝑫𝒐𝒏'𝒕 𝑩𝒆 𝑶𝒗𝒆𝒓𝒔𝒎𝒂𝒓𝒕 😒\nPC", show_alert=True)
             return
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
@@ -912,7 +912,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('× ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ×', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
             InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('ᴏᴡɴ ɪɴғᴏ', url='https://t.me/+ipDgG7Qfrps1ZTJl')
+            InlineKeyboardButton('𝐌𝐨𝐯𝐢𝐞 𝐆𝐫𝐨𝐮𝐩', url='https://t.me/pcmoviegroup')
         ], [
             InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
@@ -1068,7 +1068,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "source":
         buttons = [[
-            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://github.com/Devil-Botz/Elsa'),
+            InlineKeyboardButton('𝙼𝚘𝚟𝚒𝚎 𝚁𝚎𝚚𝚞𝚎𝚜𝚝 𝙶𝚛𝚘𝚞𝚙', url='https://t.me/pcmoviegroup'),
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
